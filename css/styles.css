@@ -70,7 +70,7 @@ main {
     flex-direction: column;
     text-align: center;
     gap: 180px;
-    margin: 160px auto 180px;
+    margin: 160px auto 150px;
 }
 
 .secondary-title {
@@ -118,7 +118,8 @@ button:hover, button:focus {
 
 .btn-1 {
     background-color: var(--strong-cyan);
-    box-shadow: 0 2px 0 0 #239D88;
+    box-shadow: 0 10px 30px -5px #239D88;
+    border-bottom: 3px solid #239D88;
 }
 
 .btn-1:hover, .btn-1:focus {
@@ -127,7 +128,8 @@ button:hover, button:focus {
 
 .btn-2 {
     background-color: var(--light-blue);
-    box-shadow: 0 2px 0 0 #5063D9;
+    box-shadow: 0 10px 30px -5px #5063D9;
+    border-bottom: 3px solid #5063D9;
 }
 
 .btn-2:hover, .btn-2:focus {
@@ -138,14 +140,11 @@ button:hover, button:focus {
     display: grid;
     gap: 20px;
     line-height: 1.1;
+    place-items: center;
 }
 
 .devices-img {
     margin-top: 16px;
-}
-
-.supercharge {
-    margin-top: -60px;
 }
 
 .wide {
@@ -193,7 +192,7 @@ button:hover, button:focus {
 .corp-logos-list {
     list-style: none;
     display: grid;
-    place-content: center;
+    place-items: center;
     gap: 50px;
 }
 
@@ -224,6 +223,7 @@ footer {
 .footer-logo {
     width: 50px;
     height: 50px;
+    margin: 0 auto 30px;
 }
 
 .link {
@@ -239,7 +239,9 @@ footer {
 }
 
 .footnote {
-    margin-top: 20px;
+    background-color: #e7e9ec;
+    padding: 30px;
+    margin: 0;
 }
 
 @media screen and (min-width: 769px) {
@@ -349,4 +351,49 @@ footer {
     .last .section-heading {
         margin-bottom: 45px;
     }
-}
+    footer {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 30px 0;
+    }
+    .footer-subwrapper {
+        display: flex;
+        text-align: left;
+        width: 45%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-link {
+        text-decoration: none;
+    }
+    .footer-link:hover, .footer-link:focus {
+        color: var(--strong-cyan);
+    }
+    .footer-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .footer-links {
+        display: flex;
+        gap: 100px;
+    }
+    .link {
+        padding: 10px 0;
+        color: var(--dark-grayish-blue);
+        font-weight: var(--fw-reg);
+    }
+    .social-icons-list {
+        list-style: none;
+        display: flex;
+        gap: 34px;
+    }
+    .footnote {
+        background-color: #e7e9ec;
+        padding: 30px;
+        margin: 0;
+    }
+} 
+
+
+ 
