@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff: 'Bai Jamjuree', sans-serif;
+    --f-size: 18px;
+    --fw-reg: 400;
+    --fw-bold: 600;
+
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--ff);
+    font-size: var(--f-size);
+    line-height: 1.5;
+}
+
+header {
+    background-image: url('../images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.header-logo {
+    padding: 122px 0 66px;
+}
+
+.primary-title {
+    font-size: 1.79rem;
+    color: var(--dark-grayish-blue);
+    font-weight: var(--fw-bold);
+    margin-bottom: 18px;
+    line-height: 1.2;
+    padding: 0 20px;
+}
+
+.subtitle, .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 46px;
+    width: 97%;
+    line-height: 1.6;
+}
+
+main {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 180px;
+    margin: 160px auto 180px;
+}
+
+.secondary-title {
+    line-height: 1.3;
+    font-weight: var(--fw-bold);
+    color: var(--dark-grayish-blue);
+    font-size: 1.675rem;
+    margin-top: 2px;
+}
+
+.tertiary-title {
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+    margin-top: 2px;
+}
+
+.light-blue {
+    color: var(--grayish-blue);
+    font-weight: var(--fw-reg);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+button {
+    color: #fff;
+    font-family: var(--ff);
+    font-weight: var(--fw-bold);
+    border: none;
+    padding: 16px 50px;
+    border-radius: 40px;
+    width: 85%;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+button:hover, button:focus {
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: var(--strong-cyan);
+    box-shadow: 0 2px 0 0 #239D88;
+}
+
+.btn-1:hover, .btn-1:focus {
+    background-color: #239D88;
+}
+
+.btn-2 {
+    background-color: var(--light-blue);
+    box-shadow: 0 2px 0 0 #5063D9;
+}
+
+.btn-2:hover, .btn-2:focus {
+    background-color: #5063D9;
+}
+
+.section-heading {
+    display: grid;
+    gap: 20px;
+    line-height: 1.1;
+}
+
+.devices-img {
+    margin-top: 16px;
+}
+
+.supercharge {
+    margin-top: -60px;
+}
+
+.wide {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 10px;
+}
+
+.breakdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0;
+}
+
+.breakdown-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.illustration {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.item-1 img {
+    margin-top: 30px;
+}
+
+.corp-logos-list {
+    list-style: none;
+    display: grid;
+    place-content: center;
+    gap: 50px;
+}
+
+.last {
+    padding: 0;
+}
+
+footer {
+    background-color: #F5F6F8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link:hover, .footer-link:focus {
+    color: var(--strong-cyan);
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.link {
+    padding: 10px 0;
+    color: var(--dark-grayish-blue);
+    font-weight: var(--fw-reg);
+}
+
+.social-icons-list {
+    list-style: none;
+    display: flex;
+    gap: 34px;
+}
+
+.footnote {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        overflow-x: hidden;
+    }
+    .header-logo {
+        padding: 130px 0 60px;
+    }
+    .page-heading {
+        width: 60%;
+    }
+    .primary-title {
+        font-size: 2.76rem;
+        padding: 0;
+    }
+    .subtitle {
+        font-size: 1.27rem;
+        width: 80%;
+        line-height: 1.4;
+        margin-bottom: 50px;
+    }
+    button {
+        width: 30%;
+        padding: 16px;
+    }
+    .buttons {
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 16px;
+        width: 50%;
+    }
+    .section-heading {
+        display: grid;
+        gap: 20px;
+        line-height: 1.1;
+        margin-bottom: 80px;
+    } 
+    .secondary-title {
+        font-size: 2.2rem;
+        margin-top: -10px; 
+    }
+    .section-subtitle {
+        width: 46%;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+    .wide {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 100px;
+    }
+    .breakdown {
+        place-content: center;
+    }
+    .col-2 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        width: 50%;
+        text-align: left;
+        line-height: 1.6;
+    }
+    .breakdown-wrapper {
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        width: 75%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+    .breakdown-text {
+        flex-direction: column;
+    }
+    .item-wrapper {
+        width: 33%;
+    }
+    .item-1 img {
+        margin-top: 0;
+    }
+    .item-1 .breakdown-text {
+        margin-top: -8px;
+    }
+    .tertiary-title {
+        font-size: 1.5rem;
+    }
+    .details {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    .img-center {
+        display: flex;
+        justify-content: center;
+    }
+    .supercharge-heading {
+        margin-top: -100px;
+    }
+    .corp-logos-list {
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .last .section-heading {
+        margin-bottom: 45px;
+    }
+}
