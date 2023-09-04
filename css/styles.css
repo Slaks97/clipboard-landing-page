@@ -317,6 +317,7 @@ footer {
     }
     .breakdown-text {
         flex-direction: column;
+        align-items: start;
     }
     .item-wrapper {
         width: 33%;
