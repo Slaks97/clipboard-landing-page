@@ -143,10 +143,6 @@ button:hover, button:focus {
     place-items: center;
 }
 
-.devices-img {
-    margin-top: 16px;
-}
-
 .wide {
     display: flex;
     flex-direction: column;
@@ -293,7 +289,10 @@ footer {
     .wide {
         display: grid;
         grid-template-columns: 50% 50%;
-        gap: 100px;
+        gap: 80px;
+    }
+    .section-img {
+        transform: translateX(-5%);
     }
     .breakdown {
         place-content: center;
@@ -315,7 +314,7 @@ footer {
         margin: 0 auto;
         gap: 20px;
     }
-    .breakdown-text {
+    .col-2 .col {
         flex-direction: column;
         align-items: start;
     }
@@ -394,7 +393,4 @@ footer {
         padding: 30px;
         margin: 0;
     }
-} 
-
-
- 
+}
